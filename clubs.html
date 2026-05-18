@@ -37,37 +37,118 @@
     <div class="row">
 
         <div class="col-md-4 mb-4">
-            <div class="card shadow">
+            <div class="card shadow h-100">
                 <div class="card-body">
                     <h5 class="card-title">Software Club</h5>
                     <p class="card-text">Students improve coding, web development and project skills.</p>
-                    <button class="btn btn-primary">View Details</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#softwareModal">
+                        View Details
+                    </button>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4 mb-4">
-            <div class="card shadow">
+            <div class="card shadow h-100">
                 <div class="card-body">
                     <h5 class="card-title">AI Club</h5>
                     <p class="card-text">Members work on artificial intelligence and machine learning projects.</p>
-                    <button class="btn btn-primary">View Details</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aiModal">
+                        View Details
+                    </button>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4 mb-4">
-            <div class="card shadow">
+            <div class="card shadow h-100">
                 <div class="card-body">
                     <h5 class="card-title">Robotics Club</h5>
                     <p class="card-text">Students design robots, circuits and automation systems.</p>
-                    <button class="btn btn-primary">View Details</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#roboticsModal">
+                        View Details
+                    </button>
                 </div>
             </div>
         </div>
 
     </div>
 
+</div>
+
+<!-- Software Modal -->
+<div class="modal fade" id="softwareModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Software Club Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <p><strong>Club Name:</strong> Software Club</p>
+                <p><strong>Area:</strong> Web development, coding and software projects</p>
+                <p><strong>Members:</strong> 120 students</p>
+                <p><strong>Goal:</strong> To help students improve programming and teamwork skills.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- AI Modal -->
+<div class="modal fade" id="aiModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">AI Club Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <p><strong>Club Name:</strong> AI Club</p>
+                <p><strong>Area:</strong> Artificial intelligence, machine learning and data science</p>
+                <p><strong>Members:</strong> 95 students</p>
+                <p><strong>Goal:</strong> To develop AI-based projects and organize workshops.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Robotics Modal -->
+<div class="modal fade" id="roboticsModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Robotics Club Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <p><strong>Club Name:</strong> Robotics Club</p>
+                <p><strong>Area:</strong> Robot design, sensors, circuits and automation</p>
+                <p><strong>Members:</strong> 80 students</p>
+                <p><strong>Goal:</strong> To build robotic systems and join competitions.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
