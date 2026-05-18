@@ -3,138 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub Home</title>
 
-    <title>Student Club Management</title>
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+        <a class="navbar-brand" href="index.html">CampusHub</a>
 
-            <a class="navbar-brand" href="#">
-                CampusHub
-            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="menu">
-
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="clubs.html">Clubs</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="students.html">Students</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="activities.html">Activities</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="register.html">Register</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="clubs.html">Clubs</a></li>
+                <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+                <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+            </ul>
         </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-
-    <div class="container mt-5 text-center">
-
-        <h1 class="display-4">
-            Student Club Management System
-        </h1>
-
-        <p class="lead mt-3">
-            Responsive web project developed with Bootstrap and JavaScript.
-        </p>
 
     </div>
+</nav>
 
-    <!-- DASHBOARD CARDS -->
+<header class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
 
-    <div class="container mt-5">
+            <div class="col-md-7">
 
-        <div class="row">
+                <span class="badge bg-primary mb-3">
+                    Student Club Management System
+                </span>
 
-            <div class="col-md-4 mb-4">
+                <h1 class="display-4 text-white">
+                    Manage university clubs in one simple platform.
+                </h1>
 
-                <div class="card shadow">
+                <p class="lead text-white mt-3">
+                    CampusHub helps students view clubs, join activities and register for university communities.
+                </p>
 
-                    <div class="card-body text-center">
+                <a href="register.html" class="btn btn-light btn-lg mt-3">
+                    Register Now
+                </a>
 
-                        <h5>Total Clubs</h5>
-
-                        <h2>12</h2>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-4 mb-4">
-
-                <div class="card shadow">
-
-                    <div class="card-body text-center">
-
-                        <h5>Total Students</h5>
-
-                        <h2>350</h2>
-
-                    </div>
-
-                </div>
+                <a href="clubs.html" class="btn btn-outline-light btn-lg mt-3 ms-2">
+                    View Clubs
+                </a>
 
             </div>
 
-            <div class="col-md-4 mb-4">
+            <div class="col-md-5 mt-4 mt-md-0">
 
-                <div class="card shadow">
+                <div class="hero-card shadow">
 
-                    <div class="card-body text-center">
+                    <h4 class="mb-3">Project Features</h4>
 
-                        <h5>Upcoming Events</h5>
+                    <ul class="list-group">
 
-                        <h2>8</h2>
+                        <li class="list-group-item">Responsive Bootstrap Design</li>
+                        <li class="list-group-item">Student Search Filter</li>
+                        <li class="list-group-item">Club Detail Modals</li>
+                        <li class="list-group-item">Activity Join Modals</li>
+                        <li class="list-group-item">JavaScript Form Validation</li>
 
-                    </div>
+                    </ul>
 
                 </div>
 
             </div>
 
         </div>
+    </div>
+</header>
+
+<section class="container mt-5">
+
+    <h2 class="text-center mb-4">
+        Dashboard Overview
+    </h2>
+
+    <div class="row">
+
+        <div class="col-md-3 mb-4">
+            <div class="card shadow text-center dashboard-card">
+                <div class="card-body">
+                    <h6>Total Clubs</h6>
+                    <h2>12</h2>
+                    <p class="text-muted">Active communities</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card shadow text-center dashboard-card">
+                <div class="card-body">
+                    <h6>Total Students</h6>
+                    <h2>350</h2>
+                    <p class="text-muted">Registered members</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card shadow text-center dashboard-card">
+                <div class="card-body">
+                    <h6>Upcoming Events</h6>
+                    <h2>8</h2>
+                    <p class="text-muted">Planned activities</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card shadow text-center dashboard-card">
+                <div class="card-body">
+                    <h6>Departments</h6>
+                    <h2>5</h2>
+                    <p class="text-muted">Student fields</p>
+                </div>
+            </div>
+        </div>
 
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</section>
 
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+<section class="container mt-4 mb-5">
+
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+
+            <div class="card shadow h-100">
+
+                <div class="card-body">
+
+                    <h4>Most Popular Clubs</h4>
+
+                    <p class="text-muted">
+                        These clubs have the highest student participation.
+                    </p>
+
+                    <div class="mb-3">
+                        <label>Software Club</label>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>AI Club</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Robotics Club</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width: 60%;">60%</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6 mb-4">
+
+            <div class="card shadow h-100">
+
+                <div class="card-body">
+
+                    <h4>Latest Announcements</h4>
+
+                    <div class="list-group mt-3">
+
+                        <div class="list-group-item">
+                            AI Workshop registrations are open.
+                        </div>
+
+                        <div class="list-group-item">
+                            Robotics competition will be held next week.
+                        </div>
+
+                        <div class="list-group-item">
+                            New members can register through the form page.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="bg-dark text-white text-center p-3">
+    <p class="mb-0">
+        © 2026 CampusHub | Web Programming Project
+    </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

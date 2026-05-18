@@ -35,3 +35,31 @@ body {
     transform: translateY(-5px);
     transition: 0.3s;
 }
+
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd, #212529);
+    padding: 80px 0;
+}
+
+.hero-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 18px;
+}
+
+.dashboard-card {
+    border-radius: 18px;
+}
+
+.dashboard-card h2 {
+    font-size: 36px;
+}
+
+.progress {
+    height: 22px;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    font-weight: bold;
+}
